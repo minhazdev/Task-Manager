@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project on Crud</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" /> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+     />
+</head>
+<body>
+    <h1>My Task Manager</h1>
+    <div class="container">
+        <form>
+        <div class="left">
+            
+            <label for="">Title:</label>
+            <input type="text" class="title-input" name="Title" id="title" cols="10" rows="2" placeholder="write your title here"><br>
+            
+                <label for="">Description:</label>
+                <input type="text" class="description-input" name="Description" id="description" cols="5" rows="2" placeholder="Write your description here"><br>
+
+                <label for="">Assigned Work:</label>
+                <input type="text" class="assigned-work-input" name="Assigned Work" id="assigned-work" cols="5" rows="2" placeholder="Enter Responsible person name"><br><br>
+
+                <label for="">Start Work:</label>
+                <input type="date" id="start" class="start-input"><br>
+
+                <label for="">End Work:</label>
+                <input type="date" id="end class="end-input"><br>
+
+                <label for="">Priority:</label>
+                <input type="radio" id="high" class="high-input" name="test" value="value1"> High
+                <input type="radio" id="medium" class="medium-input" name="test" value="value2"> Medium
+                <input type="radio" id="low" class="low-input" name="test" value="value3"> Low<br>
+                <br>
+
+                <label for="">Status:</label>
+                <input type="radio" id="new" class="new-input" name="checkbox" value="value1"> New
+                <input type="radio" id="in-progress" class="in-progress-input" name="checkbox" value="value2"> In Progress
+                <input type="radio" id="completed" class="completed-input" name="checkbox" value="value3"> Completed<br>
+                <br>
+
+                <!--Score Range-->
+                <label for="price">Completed Work (%): </label>
+                <input type="range" name="price" id="price" min="1 max="100tep="100" value="250000">
+                <output class="price-output" for="price"></output> <br>
+
+                <button type="submit">Add Task</button>
+           
+        </div>
+       </form>
+        <div class="right">
+            <!-- <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Priority</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Assigned To</th>
+                        <th scope="col">Completed (%)</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="task-body"></tbody>
+
+            </table> -->
+           <h2>Task Details</h2> 
+           <div id="task">
+               <div>
+                   <p>task 1</p>
+                       <span class="options">
+                        <i class="fas fa-edit"></i>
+                           <i class="fas fa-trash-alt"></i>
+                       </span>
+                    </div>
+               <div>
+                   <p>task 2</p>
+                   <span class="options">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash-alt"></i>
+                   </span>
+               </div>
+           </div>
+        </div>
+    </div>
+  
+</body>
+<script src="app.js"></script>
+
+</html>
